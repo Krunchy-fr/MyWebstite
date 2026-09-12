@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,119 +5,479 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta name="description"
+        content="Jubayer Siddique Niloy — student developer exploring web development and Python through practical projects.">
+
+    <meta property="og:title" content="Jubayer Siddique Niloy | Developer">
+    <meta property="og:description"
+        content="Student developer building practical projects with web technologies and Python.">
+    <meta property="og:type" content="website">
+
     <title>Jubayer Siddique Niloy | Developer</title>
 
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
+
+    <!-- Enables reveal animations only when JavaScript is actually available -->
+    <script>
+        document.documentElement.classList.add("js");
+    </script>
 </head>
 
 <body>
 
-    <!-- NAVBAR -->
-    <header>
-        <nav class="navbar">
+    <div class="background-grid" aria-hidden="true"></div>
+    <div class="ambient-glow" aria-hidden="true"></div>
 
-            <a href="#home" class="logo">NILOY<span>.</span></a>
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <header class="site-header">
+
+        <nav class="navbar" aria-label="Main navigation">
+
+            <a href="#home" class="logo" aria-label="Go to homepage">
+                NILOY<span>.</span>
+            </a>
 
             <div class="nav-links">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
+
+                <a href="#home" class="active">
+                    Home
+                </a>
+
+                <a href="#about">
+                    About
+                </a>
+
+                <a href="#skills">
+                    Skills
+                </a>
+
+                <a href="#projects">
+                    Projects
+                </a>
+
+                <a href="#contact">
+                    Contact
+                </a>
+
             </div>
 
+            <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false"
+                aria-controls="mobile-menu">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
         </nav>
+
+
+        <div class="mobile-menu" id="mobile-menu">
+
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+
+        </div>
+
     </header>
 
 
-    <!-- HERO -->
     <main>
+
+        <!-- =========================
+             HERO
+        ========================== -->
 
         <section id="home" class="hero">
 
-            <p class="intro">HEY! I'M</p>
+            <div class="hero-content reveal">
 
-            <h1>
-                Jubayer Siddique<br>
-                <span>Niloy.</span>
-            </h1>
+                <p class="intro">
+                    HEY! I'M
+                </p>
 
-            <h2>Beginner Web Developer</h2>
+                <h1>
+                    Jubayer Siddique<br>
+                    <span>Niloy.</span>
+                </h1>
 
-            <p class="hero-text">
-                I’m a student with a strong interest in programming and web development, focused on building practical
-                projects and continuously expanding my technical skills.
-            </p>
+                <div class="hero-role">
 
-            <div class="buttons">
-                <a href="#projects" class="btn primary">View Projects</a>
-                <a href="#contact" class="btn secondary">Contact Me</a>
+                    <h2>
+                        Student Developer
+                    </h2>
+
+                    <div class="status">
+                        <i aria-hidden="true"></i>
+                        Currently building
+                    </div>
+
+                </div>
+
+                <p class="hero-text">
+                    I’m a student interested in programming and web
+                    development, focused on turning ideas into practical
+                    projects and continuously improving my skills.
+                </p>
+
+                <div class="buttons">
+
+                    <a href="#projects" class="btn primary">
+                        View Projects
+                        <span aria-hidden="true">↗</span>
+                    </a>
+
+                    <a href="#contact" class="btn secondary">
+                        Contact Me
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- TERMINAL -->
+
+            <div class="hero-terminal reveal reveal-delay">
+
+                <div class="terminal">
+
+                    <div class="terminal-header">
+
+                        <div class="terminal-controls" aria-hidden="true">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <p>~/niloy</p>
+
+                    </div>
+
+                    <div class="terminal-body">
+
+                        <p>
+                            <b>$</b> whoami
+                        </p>
+
+                        <p class="output">
+                            jubayer-siddique-niloy
+                        </p>
+
+                        <p>
+                            <b>$</b> status
+                        </p>
+
+                        <p class="output status-output">
+                            <i aria-hidden="true"></i>
+                            learning &amp; building
+                        </p>
+
+                        <p>
+                            <b>$</b> focus
+                        </p>
+
+                        <p class="output">
+                            web_development + python
+                        </p>
+
+                        <p>
+                            <b>$</b>
+                            <span class="cursor" aria-hidden="true">_</span>
+                        </p>
+
+                    </div>
+
+                </div>
+
             </div>
 
         </section>
 
 
-        <!-- ABOUT -->
+        <!-- =========================
+             ABOUT
+        ========================== -->
+
         <section id="about" class="section">
 
-            <p class="section-label">01 — ABOUT</p>
+            <div class="section-heading reveal">
 
-            <h2>Learning.<br><span>Building. Growing.</span></h2>
-
-            <div class="about-content">
-
-                <p>
-                    I didn't start coding because I knew exactly what I wanted to build.
-
-                    I started because I wanted to understand how things work.
-
-                    One project turned into another, a few bugs turned into late-night debugging sessions and curiosity
-                    slowly turned into something I genuinely enjoy.
+                <p class="section-label">
+                    01 — ABOUT
                 </p>
 
-                <p>
-                    Right now, I'm a student exploring web development and learning Python. I'm still at the beginning,
-                    which means there's a lot I don't know yet—and honestly, that's the part I like most.
+                <h2>
+                    Learning.<br>
+                    <span>Building. Growing.</span>
+                </h2>
 
-                    I'm not here to pretend I've mastered everything. I'm here to keep building until I do.
-                </p>
+            </div>
+
+
+            <div class="about-grid">
+
+                <div class="about-main reveal">
+
+                    <p class="lead">
+                        I started coding because I wanted to understand
+                        how things work.
+                    </p>
+
+                    <p>
+                        One project turned into another. A few bugs turned
+                        into late-night debugging sessions, and curiosity
+                        slowly became something I genuinely enjoy.
+                    </p>
+
+                    <p>
+                        I'm still at the beginning, which means there is
+                        a lot I don't know yet. That's also what keeps
+                        me interested.
+                    </p>
+
+                </div>
+
+
+                <aside class="about-side reveal reveal-delay">
+
+                    <div class="info-block">
+
+                        <span class="info-label">
+                            Currently learning
+                        </span>
+
+                        <div class="pills">
+
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Python</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="info-block">
+
+                        <span class="info-label">
+                            Approach
+                        </span>
+
+                        <p>
+                            Learn → Build → Break → Fix → Repeat.
+                        </p>
+
+                    </div>
+
+                </aside>
 
             </div>
 
         </section>
 
 
-        <!-- SKILLS -->
+        <!-- =========================
+             SKILLS
+        ========================== -->
+
         <section id="skills" class="section">
 
-            <p class="section-label">02 — SKILLS</p>
+            <div class="section-heading reveal">
 
-            <h2>What I'm<br><span>learning.</span></h2>
+                <p class="section-label">
+                    02 — SKILLS
+                </p>
+
+                <h2>
+                    What I'm<br>
+                    <span>learning.</span>
+                </h2>
+
+            </div>
+
 
             <div class="skills-grid">
 
-                <div class="skill">
-                    <span>01</span>
-                    <h3>HTML</h3>
-                    <p>Building the structure of websites.</p>
+                <article class="skill reveal">
+
+                    <div class="skill-number">
+                        01
+                    </div>
+
+                    <div>
+
+                        <h3>HTML</h3>
+
+                        <span class="skill-state">
+                            Familiar
+                        </span>
+
+                        <p>
+                            Building the structure and semantic foundation
+                            of websites.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="skill reveal reveal-delay">
+
+                    <div class="skill-number">
+                        02
+                    </div>
+
+                    <div>
+
+                        <h3>CSS</h3>
+
+                        <span class="skill-state">
+                            Learning
+                        </span>
+
+                        <p>
+                            Designing responsive interfaces and turning
+                            ideas into layouts.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="skill reveal">
+
+                    <div class="skill-number">
+                        03
+                    </div>
+
+                    <div>
+
+                        <h3>Python</h3>
+
+                        <span class="skill-state">
+                            Learning
+                        </span>
+
+                        <p>
+                            Exploring programming, automation and
+                            problem solving.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="skill reveal reveal-delay">
+
+                    <div class="skill-number">
+                        04
+                    </div>
+
+                    <div>
+
+                        <h3>JavaScript</h3>
+
+                        <span class="skill-state">
+                            Learning
+                        </span>
+
+                        <p>
+                            Learning how to make websites dynamic
+                            and interactive.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             NOW
+        ========================== -->
+
+        <section class="now-section">
+
+            <div class="now-inner reveal">
+
+                <div>
+
+                    <p class="section-label">
+                        NOW
+                    </p>
+
+                    <h2>
+                        Always<br>
+                        <span>learning.</span>
+                    </h2>
+
                 </div>
 
-                <div class="skill">
-                    <span>02</span>
-                    <h3>CSS</h3>
-                    <p>Designing and styling web pages.</p>
-                </div>
 
-                <div class="skill">
-                    <span>03</span>
-                    <h3>Python</h3>
-                    <p>Learning programming and problem solving.</p>
-                </div>
+                <div class="now-items">
 
-                <div class="skill">
-                    <span>04</span>
-                    <h3>JavaScript</h3>
-                    <p>Learning how to make websites interactive.</p>
+                    <div class="now-item">
+
+                        <span>
+                            Currently learning
+                        </span>
+
+                        <strong>
+                            JavaScript + Python
+                        </strong>
+
+                    </div>
+
+
+                    <div class="now-item">
+
+                        <span>
+                            Currently building
+                        </span>
+
+                        <strong>
+                            Web &amp; desktop projects
+                        </strong>
+
+                    </div>
+
+
+                    <div class="now-item">
+
+                        <span>
+                            Currently exploring
+                        </span>
+
+                        <strong>
+                            Frontend development
+                        </strong>
+
+                    </div>
+
                 </div>
 
             </div>
@@ -126,65 +485,165 @@
         </section>
 
 
-        <!-- PROJECTS -->
+        <!-- =========================
+             PROJECTS
+        ========================== -->
+
         <section id="projects" class="section">
 
-            <p class="section-label">03 — PROJECTS</p>
+            <div class="section-heading reveal">
 
-            <h2>Things I've<br><span>built.</span></h2>
+                <p class="section-label">
+                    03 — PROJECTS
+                </p>
+
+                <h2>
+                    Things I've<br>
+                    <span>built.</span>
+                </h2>
+
+            </div>
 
 
             <div class="projects">
 
-                <article class="project-card">
+                <!-- FEATURED -->
 
-                    <div class="project-number">01</div>
+                <article class="project featured reveal">
 
-                    <div>
-                        <h3>Image Viewer</h3>
+                    <div class="project-number">
+                        01
+                    </div>
+
+                    <div class="project-main">
+
+                        <div class="project-top">
+
+                            <div>
+
+                                <span class="project-type">
+                                    DESKTOP APPLICATION
+                                </span>
+
+                                <h3>
+                                    Image Viewer
+                                </h3>
+
+                            </div>
+
+                            <span class="project-arrow" aria-hidden="true">
+                                ↗
+                            </span>
+
+                        </div>
 
                         <p>
-                            A desktop image viewer built with Python
-                            and Tkinter.
+                            A lightweight desktop image viewer built
+                            with Python and Tkinter as a practical
+                            programming project.
                         </p>
 
                         <div class="tags">
+
                             <span>Python</span>
                             <span>Tkinter</span>
+
                         </div>
+
+                        <div class="project-actions">
+
+                            <a href="#" class="project-link" aria-label="Image Viewer GitHub repository">
+
+                                GitHub
+                                <span aria-hidden="true">↗</span>
+
+                            </a>
+
+                        </div>
+
                     </div>
 
                 </article>
 
 
-                <article class="project-card">
+                <!-- SECOND PROJECT -->
 
-                    <div class="project-number">02</div>
+                <article class="project reveal">
 
-                    <div>
-                        <h3>Portfolio Website</h3>
+                    <div class="project-number">
+                        02
+                    </div>
+
+                    <div class="project-main">
+
+                        <div class="project-top">
+
+                            <div>
+
+                                <span class="project-type">
+                                    WEB
+                                </span>
+
+                                <h3>
+                                    Portfolio Website
+                                </h3>
+
+                            </div>
+
+                            <span class="project-arrow" aria-hidden="true">
+                                ↗
+                            </span>
+
+                        </div>
 
                         <p>
-                            My personal developer portfolio built
-                            with HTML, CSS and JavaScript.
+                            A personal developer portfolio designed
+                            and built from scratch using HTML, CSS
+                            and JavaScript.
                         </p>
 
                         <div class="tags">
+
                             <span>HTML</span>
                             <span>CSS</span>
                             <span>JavaScript</span>
+
                         </div>
+
                     </div>
 
                 </article>
 
 
-                <article class="project-card">
+                <!-- COMING SOON -->
 
-                    <div class="project-number">03</div>
+                <article class="project coming-soon reveal">
 
-                    <div>
-                        <h3>Coming Soon</h3>
+                    <div class="project-number">
+                        03
+                    </div>
+
+                    <div class="project-main">
+
+                        <div class="project-top">
+
+                            <div>
+
+                                <span class="project-type">
+                                    IN PROGRESS
+                                </span>
+
+                                <h3>
+                                    Coming Soon
+                                </h3>
+
+                            </div>
+
+                            <span class="project-arrow" aria-hidden="true">
+                                +
+                            </span>
+
+                        </div>
 
                         <p>
                             More projects are currently being built.
@@ -193,6 +652,7 @@
                         <div class="tags">
                             <span>???</span>
                         </div>
+
                     </div>
 
                 </article>
@@ -202,43 +662,148 @@
         </section>
 
 
-        <!-- CONTACT -->
+        <!-- =========================
+             CONTACT
+        ========================== -->
+
         <section id="contact" class="section contact">
 
-            <p class="section-label">04 — CONTACT</p>
+            <div class="section-heading reveal">
 
-            <h2>Let's build<br><span>something.</span></h2>
+                <p class="section-label">
+                    04 — CONTACT
+                </p>
 
-            <p>
-                I'm always learning, experimenting and looking
-                for new things to build.
-            </p>
+                <h2>
+                    Let's<br>
+                    <span>connect.</span>
+                </h2>
 
-            <a href="mailto:jubayerniloy789@gmail.com" class="btn primary">
-                Say Hello →
-            </a>
+            </div>
+
+
+            <div class="terminal contact-terminal reveal">
+
+                <div class="terminal-header">
+
+                    <div class="terminal-controls" aria-hidden="true">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <p>
+                        ~/niloy/contact
+                    </p>
+
+                </div>
+
+
+                <div class="terminal-body">
+
+                    <p>
+                        <b>$</b> cat social_links.txt
+                    </p>
+
+
+                    <div class="social-links">
+
+                        <a href="https://github.com/Krunchy-fr" target="_blank" rel="noopener noreferrer">
+
+                            <span>→</span>
+                            <strong>github</strong>
+                            <small>github.com/Krunchy-fr</small>
+
+                        </a>
+
+
+                        <a href="https://linkedin.com/in/jubayer-siddique-niloy-a413a8419/" target="_blank"
+                            rel="noopener noreferrer">
+
+                            <span>→</span>
+                            <strong>linkedin</strong>
+                            <small>
+                                linkedin.com/in/jubayer-siddique-niloy-a413a8419/
+                            </small>
+
+                        </a>
+
+
+                        <a href="mailto:jubayerniloy789@gmail.com">
+
+                            <span>→</span>
+                            <strong>email</strong>
+                            <small>jubayerniloy789@gmail.com</small>
+
+                        </a>
+
+                    </div>
+
+
+                    <p class="terminal-bottom">
+                        <b>$</b>
+                        <span class="cursor" aria-hidden="true">_</span>
+                    </p>
+
+                </div>
+
+            </div>
 
         </section>
 
     </main>
 
 
-    <!-- FOOTER -->
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
     <footer>
 
-        <p>© 2026 Jubayer Siddique Niloy</p>
+        <div class="footer-left">
 
-        <div>
-            <a href="#">GitHub</a>
-            <a href="#">LinkedIn</a>
+            <a href="#home" class="footer-logo">
+                NILOY<span>.</span>
+            </a>
+
+            <p>
+                Built with HTML, CSS &amp; JavaScript.
+            </p>
+
+        </div>
+
+
+        <div class="footer-center">
+
+            <a href="https://github.com/Krunchy-fr" target="_blank" rel="noopener noreferrer">
+                GitHub
+            </a>
+
+            <a href="https://linkedin.com/in/jubayer-siddique-niloy-a413a8419/" target="_blank"
+                rel="noopener noreferrer">
+                LinkedIn
+            </a>
+
+        </div>
+
+
+        <div class="footer-right">
+
+            <a href="#home">
+                ↑ Back to top
+            </a>
+
+            <p>
+                © 2026 Jubayer Siddique Niloy
+            </p>
+
         </div>
 
     </footer>
 
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 
 </body>
 
 </html>
-```
