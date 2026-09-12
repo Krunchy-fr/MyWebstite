@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #08090c;
+    color: #f2f2f2;
+    font-family: "Inter", sans-serif;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   GENERAL
+========================= */
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+span {
+    color: #8b7cff;
+}
+
+section {
+    scroll-margin-top: 100px;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    background: rgba(8, 9, 12, 0.8);
+    backdrop-filter: blur(12px);
+
+    border-bottom: 1px solid #1a1b20;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+
+    height: 80px;
+    padding: 0 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #9a9aa3;
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: white;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 100vh;
+    max-width: 1200px;
+
+    margin: auto;
+    padding: 180px 30px 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro {
+    color: #8b7cff;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: clamp(50px, 8vw, 100px);
+    line-height: 0.95;
+    letter-spacing: -4px;
+}
+
+.hero h1 span {
+    color: #8b7cff;
+}
+
+.hero h2 {
+    margin-top: 30px;
+
+    font-size: 22px;
+    font-weight: 500;
+
+    color: #c7c7ce;
+}
+
+.hero-text {
+    max-width: 550px;
+
+    margin-top: 15px;
+
+    color: #85858e;
+    font-size: 17px;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 35px;
+}
+
+.btn {
+    display: inline-block;
+
+    padding: 13px 22px;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.primary {
+    background: #8b7cff;
+    color: white;
+}
+
+.primary:hover {
+    transform: translateY(-3px);
+}
+
+.secondary {
+    border: 1px solid #303139;
+    color: #ddd;
+}
+
+.secondary:hover {
+    border-color: #8b7cff;
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+.section {
+    max-width: 1200px;
+    margin: auto;
+
+    padding: 130px 30px;
+}
+
+.section-label {
+    color: #8b7cff;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 25px;
+}
+
+.section h2 {
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: clamp(42px, 6vw, 72px);
+
+    line-height: 1;
+
+    letter-spacing: -3px;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about-content {
+    max-width: 700px;
+
+    margin-top: 50px;
+}
+
+.about-content p {
+    color: #92929b;
+
+    font-size: 18px;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   SKILLS
+========================= */
+
+.skills-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 1px;
+
+    margin-top: 70px;
+
+    background: #25262c;
+}
+
+.skill {
+    background: #08090c;
+
+    padding: 40px;
+
+    min-height: 200px;
+
+    transition: 0.3s;
+}
+
+.skill:hover {
+    background: #0e0f14;
+}
+
+.skill span {
+    font-size: 13px;
+}
+
+.skill h3 {
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: 28px;
+
+    margin-top: 30px;
+}
+
+.skill p {
+    color: #777780;
+
+    margin-top: 5px;
+}
+
+
+/* =========================
+   PROJECTS
+========================= */
+
+.projects {
+    margin-top: 70px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.project-card {
+    display: grid;
+
+    grid-template-columns: 100px 1fr;
+
+    padding: 40px;
+
+    border: 1px solid #202127;
+
+    border-radius: 12px;
+
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    border-color: #8b7cff;
+
+    transform: translateY(-4px);
+}
+
+.project-number {
+    color: #8b7cff;
+
+    font-family: "Space Grotesk";
+
+    font-size: 18px;
+}
+
+.project-card h3 {
+    font-family: "Space Grotesk";
+
+    font-size: 30px;
+}
+
+.project-card p {
+    max-width: 600px;
+
+    margin-top: 8px;
+
+    color: #85858e;
+}
+
+.tags {
+    display: flex;
+
+    gap: 8px;
+
+    margin-top: 20px;
+}
+
+.tags span {
+    color: #aaa;
+
+    border: 1px solid #292a31;
+
+    border-radius: 50px;
+
+    padding: 5px 12px;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+    min-height: 70vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+.contact>p:not(.section-label) {
+    max-width: 500px;
+
+    color: #85858e;
+
+    margin: 30px 0;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 30px;
+
+    border-top: 1px solid #1c1d22;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    color: #666;
+
+    font-size: 13px;
+}
+
+footer div {
+    display: flex;
+    gap: 20px;
+}
+
+footer a:hover {
+    color: white;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .hero h1 {
+        letter-spacing: -2px;
+    }
+
+    .section {
+        padding: 100px 20px;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+        padding: 30px;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
